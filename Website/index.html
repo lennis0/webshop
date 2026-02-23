@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <title>KeyForge – Razer Specialist</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">KeyForge</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Navigation toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="products.html">Produkte</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════════════════════════
+         HERO CAROUSEL
+    ══════════════════════════════════════ -->
+    <div class="hero-carousel" id="heroCarousel">
+
+      <div class="hero-track" id="heroTrack">
+
+        <!-- Slide 1: Razer BlackWidow V4 Pro -->
+        <div class="hero-slide slide-1">
+          <div class="slide-glow"></div>
+          <div class="slide-bg-text">RAZER</div>
+          <img class="slide-razer-logo" src="images/razer-logo.png" alt="" style="z-index: 3;">
+          <div class="slide-inner">
+            <div class="slide-text">
+              <span class="slide-label">// Flagship Keyboard</span>
+              <h1 class="slide-title">The <br/><em>BlackWidow</em><br/>V4 Pro</h1>
+
+              <p class="slide-sub">RGB Mechanische Tastatur</p>
+              <p class="slide-desc">
+                Razer Green Switches, Chroma RGB mit 16,8 Mio. Farben,
+                Command Dial und magnetische Handballenauflage –
+                die ultimative Gaming-Tastatur.
+              </p>
+            </div>
+            <div class="slide-image">
+              <img src="images/blackwidow-v4-pro.png"
+                   alt="Razer BlackWidow V4 Pro" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2: Razer Green Switch -->
+        <div class="hero-slide slide-2">
+          <div class="slide-glow"></div>
+          <img class="slide-razer-logo" src="images/razer-snake-logo.png" alt="" style="opacity: 0.5; right: 2%; width: 25%; z-index: 1;">
+          <div class="slide-inner">
+            <div class="slide-text">
+              <span class="slide-label">// Razer Mechanical Switch</span>
+              <h1 class="slide-title">Der <br/><em>Green</em><br/>Switch</h1>
+
+              <p class="slide-sub">Taktil &amp; Clicky — 50g Aktuation</p>
+              <p class="slide-desc">
+                Der klassische Razer Green Switch bietet präzises taktiles Feedback
+                mit hörbarem Click – ideal für Gamer, die jeden Tastendruck spüren wollen.
+                80 Mio. Keystroke-Garantie.
+              </p>
+            </div>
+            <div class="slide-image">
+              <img src="images/switch-green.webp"
+                   alt="Razer Green Switch" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3: Razer Huntsman V3 Pro TKL -->
+        <div class="hero-slide slide-3">
+          <div class="slide-glow"></div>
+          <div class="slide-bg-text">RAZER</div>
+          <img class="slide-razer-logo" src="images/razer-logo.png" alt="" style="z-index: 3;">
+          <div class="slide-inner">
+            <div class="slide-text">
+              <span class="slide-label">// Pro Gaming TKL</span>
+              <h1 class="slide-title">The <br/><em>Huntsman</em><br/>V3 Pro TKL</h1>
+
+              <p class="slide-sub">Analog Optical Switch · Rapid Trigger</p>
+              <p class="slide-desc">
+                Analog Optical Switches mit einstellbarem Aktuation (0.1–4.0mm),
+                Rapid Trigger Mode und 8.000Hz Polling –
+                der schnellste Weg zum Sieg.
+              </p>
+            </div>
+            <div class="slide-image">
+              <img src="images/huntsman-v3-pro-tkl.png"
+                   alt="Razer Huntsman V3 Pro TKL" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4: Razer Purple Switch -->
+        <div class="hero-slide slide-4">
+          <div class="slide-glow"></div>
+          <img class="slide-razer-logo" src="images/razer-snake-logo.png" alt="" style="opacity: 0.5; right: 2%; width: 25%; z-index: 1;">
+          <div class="slide-inner">
+            <div class="slide-text">
+              <span class="slide-label">// Razer Optical Switch</span>
+              <h1 class="slide-title">Der <br/><em>Purple</em><br/>Switch</h1>
+
+              <p class="slide-sub">Optisch &amp; Clicky — 45g Aktuation</p>
+              <p class="slide-desc">
+                Der Razer Purple Switch nutzt Lichttechnologie statt physischem Kontakt –
+                blitzschnelle Registrierung, kein Prellen, 100 Mio. Keystroke-Garantie.
+              </p>
+            </div>
+            <div class="slide-image">
+              <img src="images/switch-purple.png" alt="Razer Purple Switch" />
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end .hero-track -->
+
+      <!-- Arrows -->
+      <button class="carousel-arrow prev" id="prevBtn">&#8249;</button>
+      <button class="carousel-arrow next" id="nextBtn">&#8250;</button>
+
+      <!-- Dots -->
+      <div class="carousel-dots">
+        <div class="dot active" data-index="0"></div>
+        <div class="dot"        data-index="1"></div>
+        <div class="dot"        data-index="2"></div>
+        <div class="dot"        data-index="3"></div>
+      </div>
+
+      <!-- Progress bar -->
+      <div class="carousel-progress" id="progressBar"></div>
+
+    </div><!-- end .hero-carousel -->
+
+
+    <!-- ══════════════════════════════════════
+         VIDEO SECTION
+    ══════════════════════════════════════ -->
+    <div style="isolation:isolate; z-index:40; padding-top:2.5rem; padding-bottom:2.5rem; background:#0a0a0a;">
+      <div style="margin-left:auto; margin-right:auto; max-width:80rem; padding-left:1.5rem; padding-right:1.5rem; margin-top:4rem;">
+        <p style="display:flex; justify-content:center; font-size:2.25rem; font-weight:700;
+                  font-family:'Bebas Neue',sans-serif; color:#fff; letter-spacing:0.05em;">
+          Razer Mechanical
+        </p>
+        <p style="display:flex; justify-content:center; margin-top:0.5rem;
+                  font-family:'IBM Plex Mono',monospace; font-size:0.75rem; color:#444; letter-spacing:0.12em; text-transform:uppercase;">
+          Offizielle Produktvorstellung
+        </p>
+        <iframe
+          style="margin-top:3.5rem; width:100%; aspect-ratio:16/9; border-radius:1.5rem;
+                 border:1px solid rgba(0,214,57,0.15); box-shadow:0 0 60px rgba(0,214,57,0.06);"
+          src="https://www.youtube.com/embed/zSeGES3-tIo"
+          title="Razer BlackWidow V4 Pro – Produktvideo"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- SWITCH GUIDE -->
+    <section class="switch-guide">
+      <input type="checkbox" id="switch-guide-toggle">
+      <div class="switch-guide-card">
+      <label for="switch-guide-toggle" class="switch-guide-header">
+        <div class="switch-guide-header-left">
+          <span class="hero-label">// Welcher Switch passt zu dir?</span>
+          <h2>Razer Switch Guide</h2>
+          <p class="switch-guide-intro">Wähle deinen Switch-Typ und entdecke, welcher am besten zu deinem Spielstil passt.</p>
+        </div>
+        <div class="switch-guide-chevron">
+          <span class="chevron-icon">▼</span>
+        </div>
+      </label>
+
+      <div class="switch-guide-body">
+      <div class="switch-selector">
+        <input type="radio" name="switch" id="sw-green" checked>
+        <input type="radio" name="switch" id="sw-orange">
+        <input type="radio" name="switch" id="sw-yellow">
+        <input type="radio" name="switch" id="sw-purple">
+        <input type="radio" name="switch" id="sw-red">
+
+        <div class="switch-tabs">
+          <label for="sw-green" class="switch-tab">
+            <span class="switch-dot" style="background:#00d639;"></span>
+            Green
+          </label>
+          <label for="sw-orange" class="switch-tab">
+            <span class="switch-dot" style="background:#ff8c00;"></span>
+            Orange
+          </label>
+          <label for="sw-yellow" class="switch-tab">
+            <span class="switch-dot" style="background:#ffe000;"></span>
+            Yellow
+          </label>
+          <label for="sw-purple" class="switch-tab">
+            <span class="switch-dot" style="background:#9b59b6;"></span>
+            Purple
+          </label>
+          <label for="sw-red" class="switch-tab">
+            <span class="switch-dot" style="background:#e74c3c;"></span>
+            Red
+          </label>
+        </div>
+
+        <!-- GREEN -->
+        <div class="switch-panel sw-panel-green">
+          <div class="switch-panel-inner">
+            <div class="switch-panel-img">
+              <img src="images/switch-green.webp" alt="Razer Green Switch">
+            </div>
+            <div class="switch-panel-info">
+              <h3>Razer Green Switch</h3>
+              <p class="switch-tagline">Taktil &amp; Clicky — der Klassiker</p>
+              <p class="switch-desc">Der Green Switch bietet spürbares taktiles Feedback mit hörbarem Click-Geräusch. Ideal für Gamer, die jeden Tastendruck bestätigt fühlen wollen.</p>
+              <div class="switch-specs">
+                <div class="spec-row"><span class="spec-label">Typ</span><span class="spec-value">Taktil / Clicky</span></div>
+                <div class="spec-row"><span class="spec-label">Aktuation</span><span class="spec-value">50 g</span></div>
+                <div class="spec-row"><span class="spec-label">Aktuation Point</span><span class="spec-value">1.9 mm</span></div>
+                <div class="spec-row"><span class="spec-label">Total Travel</span><span class="spec-value">4.0 mm</span></div>
+                <div class="spec-row"><span class="spec-label">Lebensdauer</span><span class="spec-value">80 Mio. Keystrokes</span></div>
+              </div>
+              <span class="switch-badge">Empfohlen für: Typen &amp; MMO-Gamer</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ORANGE -->
+        <div class="switch-panel sw-panel-orange">
+          <div class="switch-panel-inner">
+            <div class="switch-panel-img">
+              <img src="images/switch-orange.webp" alt="Razer Orange Switch">
+            </div>
+            <div class="switch-panel-info">
+              <h3>Razer Orange Switch</h3>
+              <p class="switch-tagline">Taktil &amp; Leise — der Allrounder</p>
+              <p class="switch-desc">Der Orange Switch gibt taktiles Feedback ohne Click-Geräusch – perfekt für Büro und Gaming-Sessions, bei denen Stille gefragt ist.</p>
+              <div class="switch-specs">
+                <div class="spec-row"><span class="spec-label">Typ</span><span class="spec-value">Taktil / Silent</span></div>
+                <div class="spec-row"><span class="spec-label">Aktuation</span><span class="spec-value">45 g</span></div>
+                <div class="spec-row"><span class="spec-label">Aktuation Point</span><span class="spec-value">1.9 mm</span></div>
+                <div class="spec-row"><span class="spec-label">Total Travel</span><span class="spec-value">4.0 mm</span></div>
+                <div class="spec-row"><span class="spec-label">Lebensdauer</span><span class="spec-value">80 Mio. Keystrokes</span></div>
+              </div>
+              <span class="switch-badge">Empfohlen für: Office &amp; Allround-Gamer</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- YELLOW -->
+        <div class="switch-panel sw-panel-yellow">
+          <div class="switch-panel-inner">
+            <div class="switch-panel-img">
+              <img src="images/switch-yellow.webp" alt="Razer Yellow Switch">
+            </div>
+            <div class="switch-panel-info">
+              <h3>Razer Yellow Switch</h3>
+              <p class="switch-tagline">Linear &amp; Ultraschnell — für Pros</p>
+              <p class="switch-desc">Der Yellow Switch ist ein linearer Switch ohne taktiles Feedback – flüssige, leise Tastendrücke mit minimaler Aktuation für maximale Reaktionsgeschwindigkeit.</p>
+              <div class="switch-specs">
+                <div class="spec-row"><span class="spec-label">Typ</span><span class="spec-value">Linear / Silent</span></div>
+                <div class="spec-row"><span class="spec-label">Aktuation</span><span class="spec-value">45 g</span></div>
+                <div class="spec-row"><span class="spec-label">Aktuation Point</span><span class="spec-value">1.2 mm</span></div>
+                <div class="spec-row"><span class="spec-label">Total Travel</span><span class="spec-value">3.5 mm</span></div>
+                <div class="spec-row"><span class="spec-label">Lebensdauer</span><span class="spec-value">80 Mio. Keystrokes</span></div>
+              </div>
+              <span class="switch-badge">Empfohlen für: FPS &amp; Competitive-Gamer</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PURPLE -->
+        <div class="switch-panel sw-panel-purple">
+          <div class="switch-panel-inner">
+            <div class="switch-panel-img">
+              <input type="checkbox" id="purple-gif-toggle">
+              <div class="purple-img-wrapper">
+                <img src="images/switch-purple.png" alt="Razer Purple Switch" class="purple-static-img">
+                <img src="images/switch-opto-anim.gif"
+                     alt="Razer Purple Switch Animation"
+                     class="purple-gif-img"
+                     style="mix-blend-mode: screen;">
+              </div>
+              <label for="purple-gif-toggle" class="purple-gif-btn">
+                <span class="gif-btn-off">▶ Switch-Animation zeigen</span>
+                <span class="gif-btn-on">✕ Animation ausblenden</span>
+              </label>
+            </div>
+            <div class="switch-panel-info">
+              <h3>Razer Purple Switch</h3>
+              <p class="switch-tagline">Optisch / Clicky — lichtschnell</p>
+              <p class="switch-desc">Der Purple Switch ist ein optischer Clicky-Switch ohne physischen Kontakt – lichtbasierte Erkennung sorgt für blitzschnelle Registrierung und kein Prellen.</p>
+              <div class="switch-specs">
+                <div class="spec-row"><span class="spec-label">Typ</span><span class="spec-value">Optisch / Clicky</span></div>
+                <div class="spec-row"><span class="spec-label">Aktuation</span><span class="spec-value">45 g</span></div>
+                <div class="spec-row"><span class="spec-label">Aktuation Point</span><span class="spec-value">1.5 mm</span></div>
+                <div class="spec-row"><span class="spec-label">Total Travel</span><span class="spec-value">3.5 mm</span></div>
+                <div class="spec-row"><span class="spec-label">Lebensdauer</span><span class="spec-value">100 Mio. Keystrokes</span></div>
+              </div>
+              <span class="switch-badge">Empfohlen für: Typen &amp; MMO-Gamer</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RED -->
+        <div class="switch-panel sw-panel-red">
+          <div class="switch-panel-inner">
+            <div class="switch-panel-img">
+              <input type="checkbox" id="red-gif-toggle">
+              <div class="red-img-wrapper">
+                <img src="images/switch-red.png" alt="Razer Red Switch" class="red-static-img">
+                <img src="images/switch-linear-anim.gif"
+                     alt="Razer Red Switch Animation"
+                     class="red-gif-img"
+                     style="mix-blend-mode: screen;">
+              </div>
+              <label for="red-gif-toggle" class="red-gif-btn">
+                <span class="red-btn-off">▶ Switch-Animation zeigen</span>
+                <span class="red-btn-on">✕ Animation ausblenden</span>
+              </label>
+            </div>
+            <div class="switch-panel-info">
+              <h3>Razer Red Switch</h3>
+              <p class="switch-tagline">Optisch / Linear — leise &amp; präzise</p>
+              <p class="switch-desc">Der Red Switch kombiniert optische Technologie mit linearem Feel – kein taktiles Feedback, kein Click-Geräusch, maximale Geschwindigkeit.</p>
+              <div class="switch-specs">
+                <div class="spec-row"><span class="spec-label">Typ</span><span class="spec-value">Optisch / Linear</span></div>
+                <div class="spec-row"><span class="spec-label">Aktuation</span><span class="spec-value">45 g</span></div>
+                <div class="spec-row"><span class="spec-label">Aktuation Point</span><span class="spec-value">1.5 mm</span></div>
+                <div class="spec-row"><span class="spec-label">Total Travel</span><span class="spec-value">3.5 mm</span></div>
+                <div class="spec-row"><span class="spec-label">Lebensdauer</span><span class="spec-value">100 Mio. Keystrokes</span></div>
+              </div>
+              <span class="switch-badge">Empfohlen für: FPS &amp; Streamer</span>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      </div><!-- end switch-guide-body -->
+      </div><!-- end switch-guide-card -->
+    </section>
+
+    <!-- ══════════════════════════════════════
+         KEYCAP CAROUSEL (horizontal scroll)
+    ══════════════════════════════════════ -->
+    <div style="isolation:isolate; z-index:40; width:100vw; padding-top:7rem; padding-bottom:4rem; background:#0f0f0f;">
+      <p style="display:flex; justify-content:center; font-size:2.25rem; font-weight:700;
+                font-family:'Bebas Neue',sans-serif; color:#fff; letter-spacing:0.05em;">
+        Razer Keycap Collection
+      </p>
+      <p style="display:flex; justify-content:center; margin-top:0.5rem;
+                font-family:'IBM Plex Mono',monospace; font-size:0.75rem; color:#444; letter-spacing:0.12em; text-transform:uppercase;">
+        PBT · Doubleshot — für jedes Setup
+      </p>
+
+      <div style="position:relative;">
+        <button id="keycapPrev"
+                onclick="document.getElementById('keycapTrack').scrollBy({left:-400,behavior:'smooth'})"
+                style="position:absolute; left:1.5rem; top:50%; transform:translateY(-50%); z-index:10;
+                       width:52px; height:52px; border-radius:50%; border:2px solid #00d639;
+                       background:rgba(0,0,0,0.7); color:#00d639; font-size:1.6rem; cursor:pointer;
+                       display:none; align-items:center; justify-content:center;
+                       backdrop-filter:blur(6px); transition:background 0.2s, color 0.2s;"
+                onmouseover="this.style.background='#00d639';this.style.color='#000';"
+                onmouseout="this.style.background='rgba(0,0,0,0.7)';this.style.color='#00d639';">
+          &#8249;
+        </button>
+        <button id="keycapNext"
+                onclick="document.getElementById('keycapTrack').scrollBy({left:400,behavior:'smooth'})"
+                style="position:absolute; right:1.5rem; top:50%; transform:translateY(-50%); z-index:10;
+                       width:52px; height:52px; border-radius:50%; border:2px solid #00d639;
+                       background:rgba(0,0,0,0.7); color:#00d639; font-size:1.6rem; cursor:pointer;
+                       display:flex; align-items:center; justify-content:center;
+                       backdrop-filter:blur(6px); transition:background 0.2s, color 0.2s;"
+                onmouseover="this.style.background='#00d639';this.style.color='#000';"
+                onmouseout="this.style.background='rgba(0,0,0,0.7)';this.style.color='#00d639';">
+          &#8250;
+        </button>
+
+      <div id="keycapTrack" class="keycap-carousel"
+           style="scroll-snap-type:x mandatory; padding-top:1.25rem; padding-bottom:2rem;
+                  padding-left:2.5rem; padding-right:2.5rem; display:flex; flex-wrap:nowrap;
+                  overflow-x:auto; margin-top:3rem; gap:1rem;">
+
+        <!-- Card 1 -->
+        <a href="https://www.razer.com/gaming-keyboards-accessories/razer-pbt-keycap-upgrade-set" target="_blank"
+           class="keycap-card"
+           style="transition:all 0.3s ease; scroll-snap-align:center; user-select:none; flex-shrink:0;
+                  border-radius:1.5rem; display:flex; flex-direction:column; justify-content:flex-start;
+                  align-items:center; width:370px; height:420px; background:#1a1a1a;
+                  border:1px solid #2a2a2a; padding:2rem; text-decoration:none;">
+          <div style="height:200px; display:flex; align-items:center; justify-content:center; width:100%;">
+            <img src="images/pbt-keycap-classic-black.png"
+                 alt="Razer PBT Keycap – Black" style="user-select:none; max-height:131px; width:auto; object-fit:contain;" />
+          </div>
+          <p style="margin-top:1.25rem; font-weight:700; font-size:1.25rem; text-align:center;
+                    font-family:'Bebas Neue',sans-serif; letter-spacing:0.04em; color:#fff;">
+            PBT Keycap Set<br/><span style="color:#00d639;">Classic Black</span>
+          </p>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="https://www.razer.com/gaming-keyboards-accessories/razer-pbt-keycap-upgrade-set" target="_blank"
+           class="keycap-card"
+           style="transition:all 0.3s ease; scroll-snap-align:center; user-select:none; flex-shrink:0;
+                  border-radius:1.5rem; display:flex; flex-direction:column; justify-content:flex-start;
+                  align-items:center; width:370px; height:420px; background:#e8e8e8;
+                  border:1px solid #ccc; padding:2rem; text-decoration:none;">
+          <div style="height:200px; display:flex; align-items:center; justify-content:center; width:100%;">
+            <img src="images/pbt-keycap-mercury-white.png"
+                 alt="Razer PBT Keycap – Mercury White" style="user-select:none; max-height:131px; width:auto; object-fit:contain;" />
+          </div>
+          <p style="margin-top:1.25rem; font-weight:700; font-size:1.25rem; text-align:center;
+                    font-family:'Bebas Neue',sans-serif; letter-spacing:0.04em; color:#1a1a1a;">
+            PBT Keycap Set<br/><span style="color:#009e2a;">Mercury White</span>
+          </p>
+        </a>
+
+        <!-- Card 4 -->
+        <a href="https://www.razer.com/gaming-keyboards-accessories/razer-pbt-keycap-upgrade-set" target="_blank"
+           class="keycap-card"
+           style="transition:all 0.3s ease; scroll-snap-align:center; user-select:none; flex-shrink:0;
+                  border-radius:1.5rem; display:flex; flex-direction:column; justify-content:flex-start;
+                  align-items:center; width:370px; height:420px; background:#00d639;
+                  border:1px solid #009e2a; padding:2rem; text-decoration:none;">
+          <div style="height:200px; display:flex; align-items:center; justify-content:center; width:100%;">
+            <img src="images/pbt-keycap-razer-green.png"
+                 alt="Razer PBT Keycap – Green" style="user-select:none; max-height:124px; width:auto; object-fit:contain;" />
+          </div>
+          <p style="margin-top:1.25rem; font-weight:700; font-size:1.25rem; text-align:center;
+                    font-family:'Bebas Neue',sans-serif; letter-spacing:0.04em; color:#000;">
+            PBT Keycap Set<br/>Razer Green
+          </p>
+        </a>
+
+        <!-- Card 5 -->
+        <a href="https://www.razer.com/gaming-keyboards-accessories/razer-pbt-keycap-upgrade-set" target="_blank"
+           class="keycap-card"
+           style="transition:all 0.3s ease; scroll-snap-align:center; user-select:none; flex-shrink:0;
+                  border-radius:1.5rem; display:flex; flex-direction:column; justify-content:flex-start;
+                  align-items:center; width:370px; height:420px; background:#f4a0b5;
+                  border:1px solid #e07090; padding:2rem; text-decoration:none;">
+          <div style="height:200px; display:flex; align-items:center; justify-content:center; width:100%;">
+            <img src="images/pbt-keycap-quartz-pink.png"
+                 alt="Razer PBT Keycap – Quartz Pink" style="user-select:none; max-height:131px; width:auto; object-fit:contain;" />
+          </div>
+          <p style="margin-top:1.25rem; font-weight:700; font-size:1.25rem; text-align:center;
+                    font-family:'Bebas Neue',sans-serif; letter-spacing:0.04em; color:#3a0015;">
+            PBT Keycap Set<br/>Quartz Pink
+          </p>
+        </a>
+
+        <!-- Card 6 -->
+        <a href="https://www.razer.com/gaming-keyboards-accessories/razer-doubleshot-pbt-keycap-upgrade-set" target="_blank"
+           class="keycap-card"
+           style="transition:all 0.3s ease; scroll-snap-align:center; user-select:none; flex-shrink:0;
+                  border-radius:1.5rem; display:flex; flex-direction:column; justify-content:flex-start;
+                  align-items:center; width:370px; height:420px; background:#2a2a3a;
+                  border:1px solid #4a4a6a; padding:2rem; text-decoration:none;">
+          <div style="height:200px; display:flex; align-items:center; justify-content:center; width:100%;">
+            <img src="images/pbt-keycap-doubleshot.png"
+                 alt="Razer Doubleshot PBT Keycap" style="user-select:none; max-height:131px; width:auto; object-fit:contain;" />
+          </div>
+          <p style="margin-top:1.25rem; font-weight:700; font-size:1.25rem; text-align:center;
+                    font-family:'Bebas Neue',sans-serif; letter-spacing:0.04em; color:#fff;">
+            Doubleshot PBT<br/><span style="color:#00d639;">Classic Edition</span>
+          </p>
+        </a>
+
+      </div>
+      </div>
+    </div>
+
+
+    <!-- ══════════════════════════════════════
+         RAZER ECOSYSTEM
+    ══════════════════════════════════════ -->
+    <div style="isolation:isolate; z-index:40; padding-top:2rem; padding-bottom:2rem;
+                background:#0a0a0a; border-top:1px solid #1a1a1a;">
+      <div style="margin-left:auto; margin-right:auto; max-width:80rem; padding-left:1.5rem; padding-right:1.5rem;">
+        <h2 style="text-align:center; font-family:'League Spartan',sans-serif; font-size:2.5rem;
+                   letter-spacing:0.3em; text-transform:uppercase; color:#fff; font-weight:700;">
+          Das Razer Ökosystem
+        </h2>
+        <div style="margin-left:auto; margin-right:auto; margin-top:2.5rem; display:flex;
+                    justify-content:space-evenly; align-items:center; flex-wrap:nowrap;">
+          <a href="https://www.razer.com" target="_blank"
+             style="display:flex; flex-direction:column; align-items:center; gap:0.5rem;
+                    opacity:0.35; transition:opacity 0.2s, transform 0.2s;"
+             onmouseover="this.style.opacity='1';this.style.transform='scale(1.15)'" onmouseout="this.style.opacity='0.35';this.style.transform='scale(1)'">
+            <span style="font-family:'IBM Plex Mono',monospace; font-size:1rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#888;">RAZER</span>
+            <div style="height:100px; display:flex; align-items:center; justify-content:center;">
+              <span style="font-family:'Bebas Neue',sans-serif; font-size:2.8rem; color:#00d639; letter-spacing:0.05em;">RAZER</span>
+            </div>
+          </a>
+          <a href="https://www.razer.com/chroma" target="_blank"
+             style="display:flex; flex-direction:column; align-items:center; gap:0.5rem;
+                    opacity:0.35; transition:opacity 0.2s, transform 0.2s;"
+             onmouseover="this.style.opacity='1';this.style.transform='scale(1.15)'" onmouseout="this.style.opacity='0.35';this.style.transform='scale(1)'">
+            <span style="font-family:'IBM Plex Mono',monospace; font-size:1rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#888;">CHROMA</span>
+            <div style="height:100px; display:flex; align-items:center; justify-content:center;">
+              <img src="images/razer-chroma-logo.png"
+                   alt="Razer Chroma" style="max-height:100px; width:auto; object-fit:contain;">
+            </div>
+          </a>
+          <a href="https://www.razer.com/synapse-3" target="_blank"
+             style="display:flex; flex-direction:column; align-items:center; gap:0.5rem;
+                    opacity:0.35; transition:opacity 0.2s, transform 0.2s;"
+             onmouseover="this.style.opacity='1';this.style.transform='scale(1.15)'" onmouseout="this.style.opacity='0.35';this.style.transform='scale(1)'">
+            <span style="font-family:'IBM Plex Mono',monospace; font-size:1rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#888;">SYNAPSE</span>
+            <div style="height:100px; display:flex; align-items:center; justify-content:center;">
+              <img src="https://www.nicepng.com/png/full/143-1434243_software-razer-synapse-logo.png"
+                   alt="Razer Synapse" style="max-height:100px; width:auto; object-fit:contain;"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+              <span style="display:none; font-family:'Bebas Neue',sans-serif; font-size:2.2rem; color:#00d639; letter-spacing:0.05em;">SYNAPSE</span>
+            </div>
+          </a>
+          <a href="https://www.thx.com" target="_blank"
+             style="display:flex; flex-direction:column; align-items:center; gap:0.5rem;
+                    opacity:0.35; transition:opacity 0.2s, transform 0.2s;"
+             onmouseover="this.style.opacity='1';this.style.transform='scale(1.15)'" onmouseout="this.style.opacity='0.35';this.style.transform='scale(1)'">
+            <span style="font-family:'IBM Plex Mono',monospace; font-size:1rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#888;">THX</span>
+            <div style="height:100px; display:flex; align-items:center; justify-content:center;">
+              <span style="font-family:'Bebas Neue',sans-serif; font-size:2.8rem; color:#fff; letter-spacing:0.05em;">THX</span>
+            </div>
+          </a>
+          <a href="https://www.razer.com/cortex" target="_blank"
+             style="display:flex; flex-direction:column; align-items:center; gap:0.5rem;
+                    opacity:0.35; transition:opacity 0.2s, transform 0.2s;"
+             onmouseover="this.style.opacity='1';this.style.transform='scale(1.15)'" onmouseout="this.style.opacity='0.35';this.style.transform='scale(1)'">
+            <span style="font-family:'IBM Plex Mono',monospace; font-size:1rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#888;">CORTEX</span>
+            <div style="height:100px; display:flex; align-items:center; justify-content:center;">
+              <img src="https://dl.razerzone.com/src/razercortex/razercortex-logo.png"
+                   alt="Razer Cortex"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='block'"
+                   style="max-height:80px; width:auto; object-fit:contain;">
+              <span style="display:none; font-family:'Bebas Neue',sans-serif; font-size:2.2rem; color:#00d639; letter-spacing:0.05em;">CORTEX</span>
+            </div>
+          </a>
+          <a href="https://www.razer.com/axon" target="_blank"
+             style="display:flex; flex-direction:column; align-items:center; gap:0.5rem;
+                    opacity:0.35; transition:opacity 0.2s, transform 0.2s;"
+             onmouseover="this.style.opacity='1';this.style.transform='scale(1.15)'" onmouseout="this.style.opacity='0.35';this.style.transform='scale(1)'">
+            <span style="font-family:'IBM Plex Mono',monospace; font-size:1rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#888;">AXON</span>
+            <div style="height:100px; display:flex; align-items:center; justify-content:center;">
+              <img src="https://dl.razerzone.com/src/razerazxon/razerazxon-logo.png"
+                   alt="Razer Axon"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='block'"
+                   style="max-height:80px; width:auto; object-fit:contain;">
+              <span style="display:none; font-family:'Bebas Neue',sans-serif; font-size:2.2rem; color:#00d639; letter-spacing:0.05em;">AXON</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer>
+    <!-- Newsletter -->
+    <div style="position:relative; overflow:hidden; padding-top:4rem; padding-bottom:6rem;
+                background:#000; border-top:1px solid #1a1a1a;">
+      <div style="margin-left:auto; margin-right:auto; max-width:80rem; padding-left:1.5rem; padding-right:1.5rem;">
+        <div style="margin-left:auto; margin-right:auto; display:grid; max-width:42rem;
+                    grid-template-columns:1fr; gap:2rem 2rem;">
+          <div style="max-width:28rem;">
+            <h2 style="font-size:1.875rem; font-weight:700; letter-spacing:0.025em;
+                       font-family:'Bebas Neue',sans-serif; color:#fff; letter-spacing:0.04em;">
+              Immer auf dem neuesten Stand
+            </h2>
+            <p style="margin-top:1rem; line-height:2;
+                      color:#444; font-family:'IBM Plex Mono',monospace; font-size:0.85rem;">
+              Erhalte als Erster Infos zu neuen Razer Releases und exklusiven Deals.
+            </p>
+            <div style="margin-top:1.5rem; display:flex; max-width:28rem; gap:0;">
+              <input type="email" id="newsletterEmail" placeholder="deine@email.ch"
+                style="flex:1; background:#1a1a1a; border:1px solid #2a2a2a; color:#e8e8e8;
+                       font-family:'IBM Plex Mono',monospace; font-size:0.85rem; padding:0.65rem 0.9rem;
+                       border-right:none; outline:none;" />
+              <button style="background:#00d639; color:#000; border:1px solid #00d639; cursor:pointer;
+                             font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:0.8rem;
+                             letter-spacing:0.08em; text-transform:uppercase; padding:0.65rem 1.4rem;
+                             transition:all 0.15s; white-space:nowrap;"
+                      onmouseover="this.style.background='transparent';this.style.color='#00d639';"
+                      onmouseout="this.style.background='#00d639';this.style.color='#000';"
+                      onclick="document.getElementById('newsletterEmail').value=''; showToast();">
+                Anmelden
+              </button>
+            </div>
+          </div>
+          <dl style="display:grid; grid-template-columns:1fr; gap:2.5rem 2rem;">
+            <div style="display:flex; flex-direction:column; align-items:flex-start;">
+              <div style="border:1px solid #2a2a2a; padding:0.5rem; border-radius:4px;">
+                <svg style="height:1.5rem; width:1.5rem; color:#00d639;" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"/>
+                </svg>
+              </div>
+              <dt style="margin-top:1rem; font-weight:600; color:#fff; font-family:'IBM Plex Mono',monospace; font-size:0.82rem;">Wöchentliche Updates</dt>
+              <dd style="margin-top:0.5rem; color:#444; font-family:'IBM Plex Mono',monospace; font-size:0.76rem; line-height:1.6;">Neueste Razer Releases direkt in dein Postfach.</dd>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:flex-start;">
+              <div style="border:1px solid #2a2a2a; padding:0.5rem; border-radius:4px;">
+                <svg style="height:1.5rem; width:1.5rem; color:#00d639;" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <dt style="margin-top:1rem; font-weight:600; color:#fff; font-family:'IBM Plex Mono',monospace; font-size:0.82rem;">Kein Spam</dt>
+              <dd style="margin-top:0.5rem; color:#444; font-family:'IBM Plex Mono',monospace; font-size:0.76rem; line-height:1.6;">Wir versprechen es — nur relevante Infos.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div style="background:#000; border-top:1px solid #111;">
+      <div style="margin-left:auto; margin-right:auto; max-width:80rem; padding-left:1.5rem; padding-right:1.5rem;
+                  padding-top:1rem; padding-bottom:1rem; display:flex; align-items:center; justify-content:space-between;">
+        <p style="color:#2a2a2a; font-family:'IBM Plex Mono',monospace; font-size:0.7rem;">
+          &copy; 2025 KeyForge. Razer Authorized Retailer. Alle Rechte vorbehalten.
+        </p>
+        <div style="display:flex; gap:1.5rem;">
+          <a href="products.html" style="color:#2a2a2a; font-family:'IBM Plex Mono',monospace; font-size:0.7rem; text-decoration:none; letter-spacing:0.08em; text-transform:uppercase; transition:color 0.15s;"
+             onmouseover="this.style.color='#00d639'" onmouseout="this.style.color='#2a2a2a'">Produkte</a>
+          <a href="contact.html" style="color:#2a2a2a; font-family:'IBM Plex Mono',monospace; font-size:0.7rem; text-decoration:none; letter-spacing:0.08em; text-transform:uppercase; transition:color 0.15s;"
+             onmouseover="this.style.color='#00d639'" onmouseout="this.style.color='#2a2a2a'">Kontakt</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ══════════════════════════════════════
+       CAROUSEL JAVASCRIPT
+  ══════════════════════════════════════ -->
+  <script>
+    const track      = document.getElementById('heroTrack');
+    const dots       = document.querySelectorAll('.dot');
+    const progressEl = document.getElementById('progressBar');
+    const TOTAL      = 4;
+    const INTERVAL   = 10000;
+    let   current    = 0;
+    let   timer      = null;
+    let   touchStartX = 0;
+
+    function goTo(n) {
+      current = (n + TOTAL) % TOTAL;
+      track.style.transform = `translateX(-${current * 25}%)`;
+      dots.forEach((d, i) => d.classList.toggle('active', i === current));
+      restartTimer();
+    }
+
+    function restartTimer() {
+      clearInterval(timer);
+      // restart progress bar animation
+      progressEl.style.animation = 'none';
+      void progressEl.offsetWidth; // reflow
+      progressEl.style.animation = `progressBar ${INTERVAL}ms linear`;
+      timer = setInterval(() => goTo(current + 1), INTERVAL);
+    }
+
+    document.getElementById('nextBtn').addEventListener('click', () => goTo(current + 1));
+    document.getElementById('prevBtn').addEventListener('click', () => goTo(current - 1));
+
+    dots.forEach(d => d.addEventListener('click', () => goTo(+d.dataset.index)));
+
+    // Touch / swipe
+    const carousel = document.getElementById('heroCarousel');
+    carousel.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+    carousel.addEventListener('touchend', e => {
+      const diff = touchStartX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 50) diff > 0 ? goTo(current + 1) : goTo(current - 1);
+    }, { passive: true });
+
+    // Keyboard arrows
+    document.addEventListener('keydown', e => {
+      if (e.key === 'ArrowRight') goTo(current + 1);
+      if (e.key === 'ArrowLeft')  goTo(current - 1);
+    });
+
+    // Newsletter toast
+    function showToast() {
+      const toast = document.getElementById('newsletterToast');
+      toast.classList.add('toast-visible');
+      setTimeout(() => toast.classList.remove('toast-visible'), 3000);
+    }
+
+    // Start
+    restartTimer();
+
+    // Keycap carousel buttons visibility
+    const keycapTrack = document.getElementById('keycapTrack');
+    const keycapPrev  = document.getElementById('keycapPrev');
+    const keycapNext  = document.getElementById('keycapNext');
+
+    function updateKeycapButtons() {
+      const atStart = keycapTrack.scrollLeft <= 0;
+      const atEnd   = keycapTrack.scrollLeft + keycapTrack.clientWidth >= keycapTrack.scrollWidth - 1;
+      keycapPrev.style.display = atStart ? 'none' : 'flex';
+      keycapNext.style.display = atEnd   ? 'none' : 'flex';
+    }
+
+    keycapTrack.addEventListener('scroll', updateKeycapButtons, { passive: true });
+    updateKeycapButtons();
+  </script>
+
+  <script>
+    // Close nav after link tap
+    document.addEventListener("DOMContentLoaded", () => {
+      const navToggle = document.getElementById("nav-toggle");
+      document.querySelectorAll("header nav a").forEach(link => {
+        link.addEventListener("click", () => {
+          if (navToggle) navToggle.checked = false;
+        });
+      });
+    });
+  </script>
+  <div id="newsletterToast">
+    <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" style="flex-shrink:0;">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+    </svg>
+    Erfolgreich angemeldet!
+  </div>
+</body>
+</html>
+
