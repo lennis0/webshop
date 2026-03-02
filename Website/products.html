@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produkte – KeyForge Razer Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">KeyForge</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Navigation toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html" class="active">Produkte</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="products-page">
+      <span class="hero-label">// Razer Authorized Retailer</span>
+      <h1>Alle Razer Produkte</h1>
+
+      <div class="filter">
+        <input type="radio" name="category" id="filter-all" checked>
+        <input type="radio" name="category" id="filter-keyboards">
+        <input type="radio" name="category" id="filter-switches">
+        <input type="radio" name="category" id="filter-keycaps">
+        <input type="radio" name="category" id="filter-accessories">
+
+        <div class="filter-labels">
+          <label for="filter-all">Alle</label>
+          <label for="filter-keyboards">Tastaturen</label>
+          <label for="filter-switches">Switches</label>
+          <label for="filter-keycaps">Keycaps</label>
+          <label for="filter-accessories">Zubehör</label>
+        </div>
+
+        <div class="products-grid" id="keyboards">
+
+          <!-- KEYBOARDS -->
+          <article class="product-card cat-keyboards">
+            <a href="product-detail.html?id=blackwidow-v4-pro">
+              <img src="images/blackwidow-v4-pro.png" alt="Razer BlackWidow V4 Pro" style="transform: scale(0.75);">
+              <div class="product-info">
+                <h3>Razer BlackWidow V4 Pro</h3>
+                <p class="category">Tastatur</p>
+                <p class="price">CHF 229.95</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product-card cat-keyboards">
+            <a href="product-huntsman-v3-pro-tkl.html">
+              <img src="images/huntsman-v3-pro-tkl.png" alt="Razer Huntsman V3 Pro TKL">
+              <div class="product-info">
+                <h3>Razer Huntsman V3 Pro TKL</h3>
+                <p class="category">Tastatur</p>
+                <p class="price">CHF 219.95</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product-card cat-keyboards">
+            <a href="product-deathstalker-v2-pro.html">
+              <img src="images/deathstalker-v2-pro.png" alt="Razer DeathStalker V2 Pro">
+              <div class="product-info">
+                <h3>Razer DeathStalker V2 Pro</h3>
+                <p class="category">Tastatur</p>
+                <p class="price">CHF 249.95</p>
+              </div>
+            </a>
+          </article>
+
+          <!-- SWITCHES -->
+          <article class="product-card cat-switches" id="switches">
+            <a href="product-switch-green.html">
+              <img src="images/switch-green.webp" alt="Razer Green Switch">
+              <div class="product-info">
+                <h3>Razer Green Switch (36 Stk.)</h3>
+                <p class="category">Switches</p>
+                <p class="price">CHF 19.95</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product-card cat-switches">
+            <a href="product-switch-orange.html">
+              <img src="images/switch-orange.webp" alt="Razer Orange Switch">
+              <div class="product-info">
+                <h3>Razer Orange Switch (36 Stk.)</h3>
+                <p class="category">Switches</p>
+                <p class="price">CHF 19.95</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product-card cat-switches">
+            <a href="product-switch-yellow.html">
+              <img src="images/switch-yellow.webp" alt="Razer Yellow Switch">
+              <div class="product-info">
+                <h3>Razer Yellow Switch (36 Stk.)</h3>
+                <p class="category">Switches</p>
+                <p class="price">CHF 19.95</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product-card cat-switches">
+            <a href="product-switch-purple.html">
+              <img src="images/switch-purple.png" alt="Razer Purple Switch">
+              <div class="product-info">
+                <h3>Razer Purple Switch (36 Stk.)</h3>
+                <p class="category">Switches</p>
+                <p class="price">CHF 19.95</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product-card cat-switches">
+            <a href="product-switch-red.html">
+              <img src="images/switch-red.png" alt="Razer Red Switch">
+              <div class="product-info">
+                <h3>Razer Red Switch (36 Stk.)</h3>
+                <p class="category">Switches</p>
+                <p class="price">CHF 19.95</p>
+              </div>
+            </a>
+          </article>
+
+
+          <!-- KEYCAPS -->
+          <article class="product-card cat-keycaps" id="keycaps">
+            <a href="product-pbt-keycap-classic-black.html">
+              <img src="images/pbt-keycap-classic-black.png" alt="Razer PBT Keycap – Black">
+              <div class="product-info">
+                <h3>PBT Keycap Upgrade Set – Black</h3>
+                <p class="category">Keycaps</p>
+                <p class="price">CHF 29.95</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product-card cat-keycaps">
+            <a href="product-pbt-keycap-mercury-white.html">
+              <img src="images/pbt-keycap-mercury-white.png" alt="Razer PBT Keycap – Mercury White">
+              <div class="product-info">
+                <h3>PBT Keycap Upgrade Set – Mercury</h3>
+                <p class="category">Keycaps</p>
+                <p class="price">CHF 29.95</p>
+              </div>
+            </a>
+          </article>
+
+
+          <article class="product-card cat-keycaps">
+            <a href="product-pbt-keycap-doubleshot.html">
+              <img src="images/pbt-keycap-doubleshot.png" alt="Razer Doubleshot PBT Keycap">
+              <div class="product-info">
+                <h3>Doubleshot PBT Keycap Set</h3>
+                <p class="category">Keycaps</p>
+                <p class="price">CHF 49.95</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product-card cat-keycaps">
+            <a href="product-pbt-keycap-razer-green.html">
+              <img src="images/pbt-keycap-razer-green.png" alt="Razer PBT Keycap – Razer Green">
+              <div class="product-info">
+                <h3>PBT Keycap Upgrade Set – Razer Green</h3>
+                <p class="category">Keycaps</p>
+                <p class="price">CHF 29.95</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product-card cat-keycaps">
+            <a href="product-pbt-keycap-quartz-pink.html">
+              <img src="images/pbt-keycap-quartz-pink.png" alt="Razer PBT Keycap – Quartz Pink">
+              <div class="product-info">
+                <h3>PBT Keycap Upgrade Set – Quartz Pink</h3>
+                <p class="category">Keycaps</p>
+                <p class="price">CHF 29.95</p>
+              </div>
+            </a>
+          </article>
+
+          <!-- ACCESSORIES -->
+          <article class="product-card cat-accessories" id="accessories">
+            <a href="product-goliathus-mousemat.html">
+              <img src="images/goliathus-mousemat.jpeg" alt="Razer Goliathus Extended Chroma">
+              <div class="product-info">
+                <h3>Goliathus Extended Chroma</h3>
+                <p class="category">Zubehör</p>
+                <p class="price">CHF 49.95</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product-card cat-accessories">
+            <a href="product-wrist-rest-pro.html">
+              <img src="images/wrist-rest-pro.jpeg" alt="Razer Ergonomic Wrist Rest Pro">
+              <div class="product-info">
+                <h3>Ergonomic Wrist Rest Pro</h3>
+                <p class="category">Zubehör</p>
+                <p class="price">CHF 29.95</p>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <strong>KeyForge</strong>
+        <p>Razer Authorized Retailer</p>
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Produkte</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <p class="footer-copy">&copy; 2025 KeyForge. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Close nav after link tap
+    document.addEventListener("DOMContentLoaded", () => {
+      const navToggle = document.getElementById("nav-toggle");
+      document.querySelectorAll("header nav a").forEach(link => {
+        link.addEventListener("click", () => {
+          if (navToggle) navToggle.checked = false;
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
