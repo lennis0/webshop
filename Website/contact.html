@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt – KeyForge Razer Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">KeyForge</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Navigation toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Produkte</a></li>
+          <li><a href="contact.html" class="active">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- TEAM SECTION -->
+    <section class="team">
+      <span class="hero-label">// Das Team hinter KeyForge</span>
+      <h1>Über uns</h1>
+      <p class="team-intro">
+        Wir sind ein kleines Team aus Zürich, das für mechanische Tastaturen und
+        High-Performance Gaming Peripherie lebt. Als autorisierter Razer-Händler
+        beraten wir dich persönlich – vom Einsteiger bis zum Pro-Gamer.
+      </p>
+
+      <div class="team-grid">
+
+        <article class="team-card">
+          <img src="https://picsum.photos/seed/lennis/200/200" alt="Lennis">
+          <h3>Lennis</h3>
+          <p class="team-role">Projektleitung & Umsetzung</p>
+          <p>Lennis hat das Projekt geleitet und war für Planung, Design-Konzept und Umsetzung verantwortlich – kurz gesagt: fast alles.</p>
+        </article>
+
+        <article class="team-card">
+          <img src="images/claude-logo.svg" alt="Claude Code" style="object-fit:contain; background:#1a1a1a; padding:1rem;">
+          <h3>Claude Code</h3>
+          <p class="team-role">KI-Entwicklung</p>
+          <p>Claude Code hat Teile des Codes geschrieben – darunter die Hero-Carousel-Logik, Filter und Layout-Anpassungen.</p>
+        </article>
+
+        <article class="team-card">
+          <img src="images/gemini-logo.png" alt="Gemini" style="object-fit:contain; background:#1a1a1a; padding:1rem;">
+          <h3>Gemini</h3>
+          <p class="team-role">Ideengebung & Inspiration</p>
+          <p>Gemini hat kreative Ideen zu Struktur, Inhalt und Produktauswahl eingebracht.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CONTACT FORM SECTION -->
+    <section class="contact-section">
+      <h2>Kontakt aufnehmen</h2>
+      <p>Hast du Fragen zu einem Razer-Produkt, deiner Bestellung oder einem Defekt?
+         Schreib uns – wir antworten innerhalb von 24 Stunden.</p>
+
+      <form action="#" method="post" class="contact-form">
+
+        <div class="form-group">
+          <label for="contact-name">Vor- und Nachname</label>
+          <input type="text" id="contact-name" name="name" placeholder="Max Mustermann" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-email">E-Mail</label>
+          <input type="email" id="contact-email" name="email" placeholder="max@beispiel.ch" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-subject">Betreff</label>
+          <select id="contact-subject" name="subject" required>
+            <option value="" disabled selected>Betreff wählen</option>
+            <option value="order">Frage zu meiner Bestellung</option>
+            <option value="return">Rücksendung / Umtausch</option>
+            <option value="product">Razer Produktberatung</option>
+            <option value="warranty">Garantiefall / Defekt</option>
+            <option value="availability">Verfügbarkeit / Restocking</option>
+            <option value="wholesale">Grossbestellung / Business</option>
+            <option value="other">Sonstiges</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-message">Nachricht</label>
+          <textarea id="contact-message" name="message" rows="6"
+            placeholder="Deine Nachricht – z.B. Modell, Seriennummer oder Bestellnummer für schnellere Bearbeitung..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary">Nachricht senden</button>
+
+      </form>
+    </section>
+
+    <!-- CONTACT INFO -->
+    <section class="contact-info">
+      <div class="contact-info-grid">
+
+        <div class="contact-info-card">
+          <h3>Adresse</h3>
+          <p>KeyForge GmbH<br>Razer Authorized Retailer<br>Langstrasse 99<br>8004 Zürich</p>
+        </div>
+
+        <div class="contact-info-card">
+          <h3>E-Mail</h3>
+          <p>
+            <a href="mailto:hallo@keyforge.ch">hallo@keyforge.ch</a><br>
+            <a href="mailto:support@keyforge.ch">support@keyforge.ch</a>
+          </p>
+        </div>
+
+        <div class="contact-info-card">
+          <h3>Öffnungszeiten</h3>
+          <p>Mo–Fr: 09:00 – 18:00 Uhr<br>Sa: 10:00 – 16:00 Uhr<br>So: geschlossen</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- NEWSLETTER SECTION -->
+    <section class="newsletter">
+      <h2>Newsletter</h2>
+      <p>Bleib auf dem Laufenden – erhalte als Erster Infos zu neuen Razer Releases und exklusiven KeyForge Deals.</p>
+      <form action="#" method="post" class="newsletter-form">
+        <label for="newsletter-email">E-Mail-Adresse</label>
+        <div class="newsletter-row">
+          <input type="email" id="newsletter-email" name="email" placeholder="deine@email.ch" required>
+          <button type="submit" class="btn-primary">Anmelden</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <strong>KeyForge</strong>
+        <p>Razer Authorized Retailer</p>
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Produkte</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <p class="footer-copy">&copy; 2025 KeyForge. Razer Authorized Retailer. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Close nav after link tap
+    document.addEventListener("DOMContentLoaded", () => {
+      const navToggle = document.getElementById("nav-toggle");
+      document.querySelectorAll("header nav a").forEach(link => {
+        link.addEventListener("click", () => {
+          if (navToggle) navToggle.checked = false;
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
