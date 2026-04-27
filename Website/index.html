@@ -597,21 +597,21 @@
                       color:#444; font-family:'IBM Plex Mono',monospace; font-size:0.85rem;">
               Erhalte als Erster Infos zu neuen Razer Releases und exklusiven Deals.
             </p>
-            <div style="margin-top:1.5rem; display:flex; max-width:28rem; gap:0;">
-              <input type="email" id="newsletterEmail" placeholder="deine@email.ch"
+            <form action="#" method="post" style="margin-top:1.5rem; display:flex; max-width:28rem; gap:0;"
+                  onsubmit="event.preventDefault(); document.getElementById('newsletterEmail').value=''; showToast();">
+              <input type="email" id="newsletterEmail" name="email" placeholder="deine@email.ch"
                 style="flex:1; background:#1a1a1a; border:1px solid #2a2a2a; color:#e8e8e8;
                        font-family:'IBM Plex Mono',monospace; font-size:0.85rem; padding:0.65rem 0.9rem;
-                       border-right:none; outline:none;" />
-              <button style="background:#00d639; color:#000; border:1px solid #00d639; cursor:pointer;
+                       border-right:none; outline:none;" required />
+              <button type="submit" style="background:#00d639; color:#000; border:1px solid #00d639; cursor:pointer;
                              font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:0.8rem;
                              letter-spacing:0.08em; text-transform:uppercase; padding:0.65rem 1.4rem;
                              transition:all 0.15s; white-space:nowrap;"
                       onmouseover="this.style.background='transparent';this.style.color='#00d639';"
-                      onmouseout="this.style.background='#00d639';this.style.color='#000';"
-                      onclick="document.getElementById('newsletterEmail').value=''; showToast();">
+                      onmouseout="this.style.background='#00d639';this.style.color='#000';">
                 Anmelden
               </button>
-            </div>
+            </form>
           </div>
           <dl style="display:grid; grid-template-columns:1fr; gap:2.5rem 2rem;">
             <div style="display:flex; flex-direction:column; align-items:flex-start;">
