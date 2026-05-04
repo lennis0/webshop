@@ -186,7 +186,7 @@ header nav a.active {
   display: block;
   width: 30px;
   height: 2px;
-  background: var(--accent);
+  background: var(--text);
   transition: transform 0.2s ease, opacity 0.2s ease, width 0.2s ease;
 }
 

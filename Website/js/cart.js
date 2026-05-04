@@ -140,5 +140,15 @@
         form.reset();
       });
     });
+
+    // Contact / newsletter forms
+    document.querySelectorAll('.contact-form, .newsletter-form').forEach(function (form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (!form.checkValidity()) { form.reportValidity(); return; }
+        showToast('✓  Nachricht gesendet');
+        form.reset();
+      });
+    });
   });
 })();
