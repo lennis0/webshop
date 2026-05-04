@@ -39,13 +39,16 @@
     var empty = drawer.querySelector('.cart-empty');
     var footer = drawer.querySelector('.cart-footer');
     list.innerHTML = '';
+    footer.style.display = 'flex';
     if (cart.length === 0) {
       empty.style.display = 'block';
-      footer.style.display = 'none';
+      footer.querySelector('.cart-checkout-btn').disabled = true;
+      footer.querySelector('.cart-checkout-btn').style.opacity = '0.4';
       return;
     }
     empty.style.display = 'none';
-    footer.style.display = 'flex';
+    footer.querySelector('.cart-checkout-btn').disabled = false;
+    footer.querySelector('.cart-checkout-btn').style.opacity = '1';
     var sum = 0;
     cart.forEach(function (item) {
       var m = item.price.match(/[\d.]+/);
