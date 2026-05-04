@@ -141,12 +141,22 @@
       });
     });
 
-    // Contact / newsletter forms
-    document.querySelectorAll('.contact-form, .newsletter-form').forEach(function (form) {
+    // Contact form
+    document.querySelectorAll('.contact-form').forEach(function (form) {
       form.addEventListener('submit', function (e) {
         e.preventDefault();
         if (!form.checkValidity()) { form.reportValidity(); return; }
         showToast('✓  Nachricht gesendet');
+        form.reset();
+      });
+    });
+
+    // Newsletter form
+    document.querySelectorAll('.newsletter-form').forEach(function (form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (!form.checkValidity()) { form.reportValidity(); return; }
+        showToast('✓  Zum Newsletter angemeldet');
         form.reset();
       });
     });
