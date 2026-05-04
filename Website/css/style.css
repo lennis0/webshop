@@ -1817,7 +1817,7 @@ textarea { resize: vertical; min-height: 100px; }
   position: fixed;
   top: 1.5rem;
   left: 50%;
-  transform: translateX(-50%) translateY(-160%);
+  transform: translateX(-50%) translateY(-300%);
   background: var(--accent);
   color: #000;
   font-family: var(--font-body);
