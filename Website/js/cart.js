@@ -105,10 +105,7 @@
     document.body.appendChild(drawer);
     drawer.querySelector('.cart-close-btn').addEventListener('click', closeDrawer);
     drawer.querySelector('.cart-checkout-btn').addEventListener('click', function () {
-      saveCart([]);
-      updateBadge();
-      closeDrawer();
-      showToast('✓  Bestellung aufgegeben');
+      window.location.href = 'checkout.html';
     });
 
     // Cart icon badge
