@@ -42,13 +42,9 @@
     footer.style.display = 'flex';
     if (cart.length === 0) {
       empty.style.display = 'block';
-      footer.querySelector('.cart-checkout-btn').disabled = true;
-      footer.querySelector('.cart-checkout-btn').style.opacity = '0.4';
       return;
     }
     empty.style.display = 'none';
-    footer.querySelector('.cart-checkout-btn').disabled = false;
-    footer.querySelector('.cart-checkout-btn').style.opacity = '1';
     var sum = 0;
     cart.forEach(function (item) {
       var m = item.price.match(/[\d.]+/);
@@ -103,13 +99,9 @@
       '<p class="cart-empty">Dein Warenkorb ist leer.</p>' +
       '<div class="cart-footer">' +
         '<div class="cart-total"><span>Total</span><span class="cart-total-price"></span></div>' +
-        '<button class="btn-primary cart-checkout-btn">Zur Kasse →</button>' +
       '</div>';
     document.body.appendChild(drawer);
     drawer.querySelector('.cart-close-btn').addEventListener('click', closeDrawer);
-    drawer.querySelector('.cart-checkout-btn').addEventListener('click', function () {
-      window.location.href = 'checkout.html';
-    });
 
     // Cart icon badge
     badge = document.querySelector('.cart-badge');
